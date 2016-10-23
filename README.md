@@ -18,3 +18,4 @@
 - [ ] User preference list implement
 
 ## Description
+It's an iOS app which ensures the safety of people while partying. It asks the user to select a few users that they can trust. It checks your location regualrly and if you're not with a certain radius of the fellow users, it sends out notifications to your preferred list of people. Moreover, it also checks if the user gets n\back home safely
