@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14B9B2DB0BF1A249A6E6CD23 /* Pods_IgniteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E85107922609DE1B0297F4 /* Pods_IgniteApp.framework */; };
 		89D56A121DD61E4E006BBAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D56A111DD61E4E006BBAEF /* AppDelegate.swift */; };
 		89D56A141DD61E4E006BBAEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D56A131DD61E4E006BBAEF /* ViewController.swift */; };
 		89D56A171DD61E4E006BBAEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D56A151DD61E4E006BBAEF /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60E85107922609DE1B0297F4 /* Pods_IgniteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IgniteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89AF226B1DD6200A00B74B64 /* project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "project-Bridging-Header.h"; sourceTree = "<group>"; };
 		89D56A0E1DD61E4E006BBAEF /* IgniteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IgniteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D56A111DD61E4E006BBAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89D56A131DD61E4E006BBAEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		89D56A1B1DD61E4E006BBAEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89D56A1E1DD61E4E006BBAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89D56A201DD61E4E006BBAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC610ABA71A2DDDD71348881 /* Pods-IgniteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IgniteApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IgniteApp/Pods-IgniteApp.release.xcconfig"; sourceTree = "<group>"; };
+		F282FC73274D859442B389A3 /* Pods-IgniteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IgniteApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IgniteApp/Pods-IgniteApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B9B2DB0BF1A249A6E6CD23 /* Pods_IgniteApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,8 @@
 			children = (
 				89D56A101DD61E4E006BBAEF /* IgniteApp */,
 				89D56A0F1DD61E4E006BBAEF /* Products */,
+				929B587699B4B4E7339CE5BE /* Pods */,
+				89DE5500FA1C9C68563ADD0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				89D56A111DD61E4E006BBAEF /* AppDelegate.swift */,
+				89AF226B1DD6200A00B74B64 /* project-Bridging-Header.h */,
 				89D56A131DD61E4E006BBAEF /* ViewController.swift */,
 				89D56A151DD61E4E006BBAEF /* Main.storyboard */,
 				89D56A1B1DD61E4E006BBAEF /* Assets.xcassets */,
@@ -67,6 +76,23 @@
 			path = IgniteApp;
 			sourceTree = "<group>";
 		};
+		89DE5500FA1C9C68563ADD0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60E85107922609DE1B0297F4 /* Pods_IgniteApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		929B587699B4B4E7339CE5BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F282FC73274D859442B389A3 /* Pods-IgniteApp.debug.xcconfig */,
+				CC610ABA71A2DDDD71348881 /* Pods-IgniteApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89D56A231DD61E4E006BBAEF /* Build configuration list for PBXNativeTarget "IgniteApp" */;
 			buildPhases = (
+				12307A046EB27B6380C643E5 /* [CP] Check Pods Manifest.lock */,
 				89D56A0A1DD61E4E006BBAEF /* Sources */,
 				89D56A0B1DD61E4E006BBAEF /* Frameworks */,
 				89D56A0C1DD61E4E006BBAEF /* Resources */,
+				42552AC612C2F38A08C38E89 /* [CP] Embed Pods Frameworks */,
+				3D958C6D43B8FF0EB0927513 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +163,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12307A046EB27B6380C643E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D958C6D43B8FF0EB0927513 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IgniteApp/Pods-IgniteApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42552AC612C2F38A08C38E89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IgniteApp/Pods-IgniteApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		89D56A0A1DD61E4E006BBAEF /* Sources */ = {
@@ -261,6 +338,7 @@
 		};
 		89D56A241DD61E4E006BBAEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F282FC73274D859442B389A3 /* Pods-IgniteApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WD5637H5AA;
@@ -274,6 +352,7 @@
 		};
 		89D56A251DD61E4E006BBAEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC610ABA71A2DDDD71348881 /* Pods-IgniteApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WD5637H5AA;
@@ -304,6 +383,7 @@
 				89D56A251DD61E4E006BBAEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
